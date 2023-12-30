@@ -2,24 +2,25 @@ const questions = document.querySelectorAll('.questions');
 
 for (let i = 0; i < questions.length; i++) {
     questions[i].addEventListener('click', (event) => {
+        const btn = questions[i].children[1];
         const answer = questions[i].nextElementSibling;
         if (answer.classList.contains('hidden')) {
-            showAnswer(answer);
+            showAnswer(answer, btn);
         } else {
-            hideAnswer(answer);
+            hideAnswer(answer, btn);
         }
     });
 }
 
 
-function showAnswer(answer) {
+function showAnswer(answer, btn) {
     answer.classList.remove('hidden');
     answer.classList.add('unhidden');
-    console.log(answer);
+    btn.src = '/assets/images/icon-minus.svg';
 }
 
-function hideAnswer(answer) {
+function hideAnswer(answer, btn) {
     answer.classList.remove('unhidden');
     answer.classList.add('hidden');
-    console.log(answer);
+    btn.src = '/assets/images/icon-plus.svg';
 }
