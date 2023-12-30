@@ -16,11 +16,11 @@ for (let i = 0; i < questions.length; i++) {
 function showAnswer(answer, btn) {
     answer.classList.remove('hidden');
     answer.classList.add('unhidden');
-    btn.src = '/assets/images/icon-minus.svg';
+    btn.src = './assets/images/icon-minus.svg';
 }
 
 function hideAnswer(answer, btn) {
     answer.classList.remove('unhidden');
     answer.classList.add('hidden');
-    btn.src = '/assets/images/icon-plus.svg';
+    btn.src = './assets/images/icon-plus.svg';
 }
