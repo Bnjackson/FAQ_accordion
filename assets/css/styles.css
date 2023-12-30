@@ -1,6 +1,6 @@
 @font-face {
     font-family: "WorkSans";
-    src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf');
 }
 /*
 General styles
@@ -13,7 +13,7 @@ body {
 }
 
 .background-pattern {
-    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-image: url('/assets/images/background-pattern-desktop.svg');
     position: absolute;
     top: 0;
     left: 0;
